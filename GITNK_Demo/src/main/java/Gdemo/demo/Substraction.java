@@ -2,12 +2,13 @@ package Gdemo.demo;
 
 import java.util.Scanner;
 
-class Substraction
+public class Substraction
 {
    private static Scanner in;
 
 public static void main(String args[])
    {
+Substraction obj = new Substraction();
       int x, y, z;
  
       System.out.println("Enter two integers to calculate their sub");
@@ -15,8 +16,12 @@ public static void main(String args[])
      
       x = in.nextInt();
       y = in.nextInt();
-      z = x - y;
+      z = obj.sub(x,y);
      
       System.out.println("Sub of the integers = " + z);
    }
+
+public int sub(int x,int y) {
+	return x - y;
+}
 }

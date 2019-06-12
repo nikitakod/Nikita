@@ -2,12 +2,13 @@ package Gdemo.demo;
 
 import java.util.Scanner;
 
-class Addition
+public class Addition
 {
    private static Scanner in;
 
 public static void main(String args[])
    {
+	Addition obj= new Addition();
       int x, y, z;
  
       System.out.println("Enter two integers to calculate their sum");
@@ -15,8 +16,13 @@ public static void main(String args[])
      
       x = in.nextInt();
       y = in.nextInt();
-      z = x + y;
+      z = obj.add(x,y);
      
       System.out.println("Sum of the integers = " + z);
    }
+
+public int add(int a,int b) {
+	return a+b;
+}
+
 }
